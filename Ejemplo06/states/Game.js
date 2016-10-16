@@ -4,6 +4,10 @@ Game.prototype = {
 		//Para comenzar a usar fisica basta con activar que sistema vamos a usar
 		//ARCADE, P2, Ninja y Box2D
 		//vamoa a usar ARCADE
+		//existen tres tipos de cuerpos
+		//dinamico lo afecta la gravedad del mundo
+		//estatico no es afecta por la gravedad del mundo y por ninguna fuerza
+		//dinamico no lo afecta la gravedad pero puede ser afectado por otras fuerzas
 		this.game.physics.startSystem(Phaser.Physics.ARCADE);
 		//le podemos algo de gravedad, esta en pixeles, no metros pos segundo
 		this.game.physics.arcade.gravity.y = 1000;
