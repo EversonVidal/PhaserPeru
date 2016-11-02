@@ -40,6 +40,7 @@ Game.prototype = {
 		this.generationTime = 0;
 
 		this.elements  = this.game.add.group();
+		//si activamos esta propiedad todos los sprites dentro del grupo van a tener fisica
 		this.elements.enableBody = true;
 	},
 	render:function(){
